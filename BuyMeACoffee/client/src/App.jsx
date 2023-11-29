@@ -33,7 +33,7 @@ function App() {
 
         setAccount(accounts[0]);
 
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const provider = new ethers.BrowserProvider(window.ethereum);
         const signer = provider.getSigner() || provider.getSigner(accounts[0]);
 
         const contract = new ethers.Contract(
@@ -45,8 +45,8 @@ function App() {
         setState({ provider, signer, contract });
 
         // Log contract information
-        console.log("Contract Address:", contract.address);
-        console.log("Contract ABI:", contract.interface.format());
+        // console.log("Contract Address:", contract.getAddress());
+        // console.log("Contract ABI:", contract.interface.format());
       } catch (error) {
         console.error("Error connecting to MetaMask:", error);
       }
