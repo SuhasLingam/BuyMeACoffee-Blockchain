@@ -1,0 +1,14 @@
+.but {
+    text-align: center;
+    position: relative;
+    
+}
+
+button {
+    color: green;
+    background-color: yellow;
+    padding: 20px;
+    font-size: 50px;
+    border: 2px;
+    border-radius: 30px;
+}
