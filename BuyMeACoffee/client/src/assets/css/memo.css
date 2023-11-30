@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Yanone+Kaffeesatz&display=swap');
+
+/* 
+.t-names tr th{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
+    
+} */
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+
+th {
+    background-color: #4287f5;
+    color: white;
+}
+
+th,
+td {
+    width: 150px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}

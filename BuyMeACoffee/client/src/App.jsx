@@ -43,7 +43,7 @@ function App() {
           contractABI,
           signer
         );
-
+        console.log(contract);
         setState({ provider, signer, contract });
 
         // Log contract information
@@ -57,9 +57,11 @@ function App() {
   }, []);
 
   return (
-    <div className="cen">
-      <div>Account : {account}</div>
+    <div className="main">
+      <div className="account">Account : {account}</div>
       <Buy state={state}></Buy>
+      <Memos state={state}></Memos>
+      <withdraw state={state}></withdraw>
     </div>
   );
 }
