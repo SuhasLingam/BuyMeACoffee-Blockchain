@@ -9,7 +9,7 @@ const Buy = ({ state }) => {
     event.preventDefault();
     const name = document.querySelector("#name").value;
     const message = document.querySelector("#message").value;
-    const account = { value: ethers.utils.parseEther("0.0001") };
+    const account = { value: ethers.parseEther("0.001", "ether") };
     const transaction = await contract.buyCoffee(message, name, account);
     await transaction.wait();
     console.log("transaction is successful");

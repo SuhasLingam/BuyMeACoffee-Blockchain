@@ -34,7 +34,9 @@ function App() {
         setAccount(accounts[0]);
 
         const provider = new ethers.BrowserProvider(window.ethereum);
-        const signer = provider.getSigner() || provider.getSigner(accounts[0]);
+        const signer =
+          (await provider.getSigner()) ||
+          (await provider.getSigner(accounts[0]));
 
         const contract = new ethers.Contract(
           contractAddress,
