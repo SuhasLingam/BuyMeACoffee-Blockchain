@@ -23,11 +23,7 @@ const Buy = ({ state }) => {
             <label htmlFor="first-name" className="ha-screen-reader">
               First name
             </label>
-            <input
-              id="name"
-              className="field__input"
-              placeholder="e.g. Stanislav"
-            />
+            <input id="name" className="field__input" placeholder="e.g. Ravi" />
             <span className="field__label-wrap" aria-hidden="true">
               <span className="field__label">Name</span>
             </span>
@@ -42,7 +38,7 @@ const Buy = ({ state }) => {
               placeholder="e.g. Thanks"
             />
             <span className="field__label-wrap" aria-hidden="true">
-              <span className="field__label">Last name</span>
+              <span className="field__label">Message</span>
             </span>
           </div>
         </div>
